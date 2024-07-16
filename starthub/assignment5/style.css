@@ -1,0 +1,87 @@
+body{
+    background-color: #a8d7ff;
+}
+/* Nesthub max */
+@media (max-width: 1280px) {
+    body{
+        background-color: #001a8f;
+    }
+}
+/*ipad pro/ nesthub */
+@media (max-width: 1024px) {
+    body{
+        background-color: #7104b9;
+    }
+}
+/*Surface pro 7*/
+@media (max-width: 912px) {
+    body{
+        background-color: #8f0048;
+    }
+}
+/*Asus Zenbook fold*/
+@media (max-width: 853px) {
+    body{
+        background-color: #008f5f;
+    }
+}
+/*Ipad air*/
+@media (max-width: 820px) {
+    body{
+        background-color: #218f00;
+    }
+}
+/*Ipad mini*/
+@media (max-width: 768px) {
+    body{
+        background-color: #f4f803;
+    }
+}
+/*Surface duo*/
+@media (max-width: 540px) {
+    body{
+        background-color: #8f4000;
+    }
+}
+/*Iphone 14 Pro max*/
+@media (max-width: 430px) {
+    body{
+        background-color: #fa0808;
+    }
+}
+/*Iphone xr/6/7/8 plus*/
+@media (max-width: 414px) {
+    body{
+        background-color: #461b1d;
+    }
+}
+/*Samsung Galaxy s20 ultra*/
+@media (max-width: 412px) {
+    body{
+        background-color: #5a6183;
+    }
+}
+/*Iphone 12 pro*/
+@media (max-width: 390px) {
+    body{
+        background-color: #77bb77;
+    }
+}
+/*Iphone SE/6/7/8/X*/
+@media (max-width: 375px) {
+    body{
+        background-color: #9c5c92;
+    }
+}
+/*Samsung Galaxy S5/S8+*/
+@media (max-width: 360px) {
+    body{
+        background-color: #e98080;
+    }
+}
+/*Samsung Galaxy Z fold5*/
+@media (max-width: 344px) {
+    body{
+        background-color: #312309;
+    }
+}

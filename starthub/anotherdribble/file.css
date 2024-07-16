@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 50px 90px;
+    background-color: #fff;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #107bc5;
+}
+#header .home a{
+    font-family: 'Noto Serif', sans-serif;
+    text-decoration: none;
+    background-color: #fff;
+    height: 20px;
+    width: 80px;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 40px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #107bc5;
+    font-weight: 700;
+    border: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav li{
+    list-style: none;
+}
+#nav li a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+#nav .links1 ul{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+#nav .links1 ul li a{
+    margin: 0 30px;
+    color: #fff;
+    font-size: 20px;
+}
+#nav .links2 ul{
+    display: flex;
+    align-items: center;
+}
+#nav .links2 ul li a{
+    margin: 0 20px;
+    font-size: 20px;
+    color: #fff;
+}
+#nav .links2 ul li a button{
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+#nav .links2 ul li a button:hover{
+    background: #fff;
+    color: #107bc5;
+}
+#hero{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #107bc5;
+    padding: 30px 120px;
+    border-bottom: 5px solid #fff;
+}
+#hero .contentleft p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+#hero .contentleft p span{
+    font-weight: 800;
+    font-size: 80px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+#hero .contentleft .write{
+    display: flex;
+    align-items: normal;
+}
+#hero .contentleft .write p{
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 0;
+}
+#hero .contentleft .write span{
+    font-size: 70px;
+    color: #fff;
+}
+#hero .contentright img{
+    height: 550px;
+    width: 800px;
+    border: 1px solid #107bc5;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+}
+#feature{
+    padding: 60px 120px;
+    border-top: 5px solid #fff;
+    background-color: #107bc5;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#feature h4{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 30px;
+
+}
+#feature .febox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+#feature .febox .box1:nth-child(1) img{
+    height: 133px;
+}
+#feature .febox .box1{
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+#feature .febox .box1:hover{
+    /* border: 2px solid #000; */
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#feature .febox .box1 h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #107bc5;
+}
+#feature .febox .box1 p{
+    font-size: 10px;
+    color: #363434;
+    font-family: 'Roboto', sans-serif;
+}

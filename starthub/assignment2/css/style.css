@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.layout{
+    background-color: #000;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 250px;
+}
+.contentn h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+}
+.contentn p{
+    color: #f2f2e9;
+    width: 200px;
+    white-space: nowrap;
+}
+.lbtn button{
+    padding: 11px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 300px;
+    white-space: nowrap;
+    transition: 600ms ease;
+}
+.lbtn button:hover{
+    background-color: #777575;
+}
+.lbtn .bx{
+    font-size: 17px;
+    padding-right: 6px;
+}
+footer{
+    background-color: #1f1e1e;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer p{
+    padding-right: 20px;
+    color: #b1b1b1;
+}
+@media (max-width: 1030px) {
+    .layout{
+        flex-direction: column-reverse;
+        padding: 200px 0;
+    }
+}
+@media (max-width: 800px){
+    .layout .contentn{
+        margin-bottom: -70px;
+    }
+    .layout .contentn h1{
+        font-size: 50px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 499px) {
+    footer p {
+        font-size: 10px;
+    }
+    .layout .contentn h1 {
+        font-size: 40px;
+    }
+    .contentn p {
+        font-size: 12px;
+    }
+    .lbtn button{
+        width: 250px;
+    }
+    .img img{
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    .layout .contentn{
+        margin-bottom: -150px;
+    }
+    .lbtn button{
+        font-size: 10px;
+        width: 200px;
+    }
+}
+@media (max-height: 750px) {
+    .layout .contentn{
+        margin-bottom: -150px;
+    }
+    .lbtn button{
+        font-size: 10px;
+        width: 200px;
+    }
+}

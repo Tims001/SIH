@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 0;
+    background-size: cover;
+    background: #553be6;
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%) no-repeat;
+}
+body:after {
+    position: absolute;
+    top: -150px;
+    left: -200px;
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    content: '';
+    background: #fff;
+    z-index: -1;
+    opacity: .05; }
+    body:before {
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        width: 40%;
+        height: 200px;
+        content: '';
+        background: #000000;
+        z-index: -1;
+        opacity: .05;
+        border-radius: 0 50% 50% 0; }
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    margin: 2.5rem 0 2.5rem 0;
+    /* position: sticky;
+    top: 0; */
+}
+#header a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s ease-in-out;
+}
+#header a:hover{
+    color: #000000;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#navbar li{
+    list-style: none;
+    position: relative;
+    padding: 0 50px;
+}
+#navbar li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: #eeeeff;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #fff;
+}
+#navbar li a.active::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    visibility: visible;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+    transform: scaleX(1);
+    transition: all 0.4s ease-in-out 0s;
+    z-index: -1;
+}
+#navbar li a::after{
+    content: "";
+    width: 100%;
+    visibility: hidden;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+    z-index: -1;
+}
+#navbar li a:hover::after{
+    visibility: visible;
+    background-color: #fff;
+    transform: scaleX(1);
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+#hero{
+    padding: 40px 80px;
+    height: 100vh;
+}
+#hero .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#hero .content #content_left{
+    margin-bottom: 5%;
+}
+#hero .content #content_left h1{
+    font-size: 65px;
+    font-weight: 650;
+    color: #fff;
+    font-family: "Roboto" sans-serif;
+}
+#hero .content #content_left p{
+    padding: 25px 0;
+    font-size: 20px;
+    color: #e1e1ff;
+}
+
+#hero .content #content_left .btn button{
+    border: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px 40px 40px 0;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+#hero .content #content_left .btn button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+#hero .content #content_left .btn button a span{
+    display: block;
+}
+#hero .content #content_left .btn #bt1{
+    background-color: #1fb6fc;
+    line-height:50px;
+    padding-top: 13px;
+}
+#hero .content #content_left .btn #bt2{
+    background-color: #bc6ff1;
+    line-height:15px;
+    padding-top: 30px;
+    margin-left: 15px;
+    position: relative;
+    bottom: -15px;
+}
+#hero .content #content_left .btn button:hover{
+    border-radius: 0 40px 40px 40px;
+}
+#hero .content #content_left .icons {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+}
+#hero .content #content_left .icons li{
+    display: flex;
+    list-style: none;
+}
+#hero .content #content_left .icons li a{
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+}
+.icons .bx{
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+.icons .bx:hover{
+    background-color: #1fb6fc;
+}
+
+/*responsive setup*/
+@media (max-width: 999px) {
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        width: 300px;
+        z-index: 90;
+        background-color: #553be6;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1) ;
+        padding: 80px 0 0 10px;
+        transition: 0.5s ease-in-out;
+    }
+    #navbar li{
+        margin-bottom: 30px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+
+    #hero .content{
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    #mobile{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+    }
+    .content img{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+    }
+    #hero .content #content_left .icons {
+        flex-direction: column;
+        bottom: 5%;
+        right: 4px;
+    }
+    #hero .content #content_left h1 {
+        font-size: 50px;
+    }
+    #hero .content #content_left p {
+        font-size: 15px;
+    }
+    #hero .content #content_left .btn button {
+        padding: 10px 20px 10px 20px;
+    }
+    #hero .content #content_left .btn #bt2 {
+        position: relative;
+        top: 15px;
+    }
+    body:after {
+        position: absolute;
+        top: -150px;
+        left: -200px;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        content: '';
+        background: #fff;
+        z-index: -1;
+        opacity: .05; }
+        body:before {
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            width: 60%;
+            height: 200px;
+            content: '';
+            background: #000000;
+            z-index: -1;
+            opacity: .05;
+            border-radius: 0 50% 50% 0; }
+}
+@media (max-width: 650px) {
+    #hero .content #content_left h1 {
+        font-size: 30px;
+    }
+    .content img {
+        margin-top: -40px;
+    }
+    #header a {
+        font-size: 30px;
+    }
+    #hero .content #content_left p {
+        font-size: 10px;
+    }
+    #hero .content #content_left .btn button{
+        padding: 5px 20px 5px 20px;
+    }
+    #hero .content #content_left .btn button a{
+        font-size: 10px;
+    }
+    #hero .content #content_left .btn #bt2{
+        padding-top: 10px;
+        top: 8px ;
+    }
+    #hero .content #content_left .btn #bt1{
+        background-color: #1fb6fc;
+        padding: 0 10px 0 10px;
+    }
+    #hero .content #content_left .icons {
+        right: 0px;
+    }
+    #hero{
+        padding: 40px 70px;
+        height: 90vh;
+    }
+    #hero .content #content_left .icons li a{
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 499px) {
+    #navbar li a {
+        font-size: 15px;
+    }
+    #hero {
+        padding: 40px 40px;
+    }
+    #hero .content #content_left .icons {
+        right: -10px;
+    }
+    #hero .content #content_left p {
+        padding-right: 10px;
+    }
+    body:after {
+        position: absolute;
+        top: -150px;
+        left: -200px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        content: '';
+        background: #fff;
+        z-index: -1;
+        opacity: .05; }
+}
+@media (max-width: 380px) {
+    #header {
+        padding: 20px 40px;
+    }
+}

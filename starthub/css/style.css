@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*style for background image with a gradient*/
+.main-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.196)),url("../image/computer.jpg");
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+}
+
+
+.content{
+    color: #000;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #000;
+}
+.content h6{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.content button{
+    font-size: 20px;
+    font-weight: 750;
+    padding: 15px 30px;
+    color: #000000;
+    background-color: #ffffff4d;
+    border-radius: 6px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s ease;
+    margin: 0 10px;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.content button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+hr{
+    margin: auto;
+    width: 600px;
+}
+
+.content #btn{
+    padding: 17px;
+}
