@@ -20,7 +20,7 @@ function calculator(first, sec){
     }
 }
 
-console.log(calculator(20,5).div());
-console.log(calculator(20,5).mul());
-console.log(calculator(20,5).add());
-console.log(calculator(20,5).sub());
+console.log(calculator(20,0).div());
+console.log(calculator(20,0).mul());
+console.log(calculator(20,0).add());
+console.log(calculator(20,0).sub());
