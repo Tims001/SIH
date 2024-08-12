@@ -32,15 +32,40 @@ carlist.splice(3,1)
 
 //task
 
-// function div(x,y){
-//     return{
-//     mul:function mul() {
-//         return x*y;
-//     },
-//     set:function pro() {
-//         return x/y;
-//     }
-// }
-// }
+function div(x,y){
+    return{
+    mul:function mul() {
+        return x*y;
+    },
+    set:function pro() {
+        return x/y;
+    }
+}
+}
 
 // console.log(div(100,2).set())
+
+
+//loop
+const name = ["Mike","Hensh","Idy","Barack","Okon"];
+
+for (let i = 0; i < name.length; i++){
+    // console.log(name[i]);
+}
+
+//Classwork
+const testNumbers = [23,12,83,43,20,16,5];
+for (let i=0; i < testNumbers.length; i++){
+    if (testNumbers[i] % 2 === 0){
+        console.log(testNumbers[i]);
+    }
+}
+
+//Recursive function
+function find20(x){
+    if(testNumbers[x] === 20){
+        return "20 has been found"
+    }
+        return find20(x + 1)
+}
+console.log(find20(0));
