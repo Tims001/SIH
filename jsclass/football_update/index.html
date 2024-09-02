@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORE</title>
+    <link rel="icon" type="image/x-icon" href="img/jabulani.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="data:image/png;base64,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" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCORE.com</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#" id="resultone" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" >2020</a>
+              </li>
+              <li>
+                <a href="#" id="resulttwo" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">2021</a>
+              </li>
+              <li>
+                <a href="#" id="resultthree" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">2022</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="main" class="flex flex-col gap-10 px-[250px] py-6 mt-20">
+
+    </section>
+    <script src="football.js"></script>
+</body>
+</html>
