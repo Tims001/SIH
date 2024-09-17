@@ -13,6 +13,7 @@ const studentData ={
     },
 };
 
+
 //console.log(studentData.guardian.spouse.gender)
 
 //Arrays
