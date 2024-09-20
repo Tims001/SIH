@@ -108,7 +108,7 @@ class Inmate{
             if(this.gender.toUpperCase() === "FEMALE"){title = "Mrs"
             }
 
-            return `${title} ${this.name} which is ${this.age} years of age was arrested on ${this.arrestPeriod} for commiting ${this.offense}`
+            return `${title} ${this.name} which is ${this.age} years of age was arrested in ${this.arrestPeriod} for committing ${this.offense}`
         }
 }
 const im8223 = new Inmate("Bella","female","34","2013","50 years","Murder")
