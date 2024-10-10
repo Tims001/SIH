@@ -46,7 +46,7 @@ const SignUp = () => {
 
 
     return(
-        <div className="h-screen w-full flex items-center justify-center bg-gradient-to-tr from-violet-700 to-fuchsia-500 p-11">
+        <div className="h-auto w-full flex items-center justify-center bg-gradient-to-tr from-violet-700 to-fuchsia-500 p-11">
         <form onSubmit={sendEmail} className="h-full w-[600px] bg-white flex flex-col gap-3 items-center p-10 rounded-2xl">
             <div className="flex flex-col justify-start gap-1 w-full">
                 <label className="font-semibold text-lg">
