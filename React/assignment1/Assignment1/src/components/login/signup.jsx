@@ -253,6 +253,7 @@ const SignUp = () => {
                 </label>
                 <input type="password"
                 className="border-black border h-10 w-full p-3 text-xl font-medium italic rounded-md focus:outline-none"
+                required
                 placeholder="Confirm password"
                 name="confirmpassword"
                 value={userInfo.confirmpassword}
