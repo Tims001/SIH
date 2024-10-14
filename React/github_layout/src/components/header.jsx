@@ -1,9 +1,14 @@
 import bell from "../assets/notifications-outline.svg";
 import headPhoto from "../assets/photo1.jpg";
 import gitLogo from "../assets/github.svg";
+import dropPix1 from "../assets/img.jpg";
+import dropPix3 from "../assets/photo2.jpg";
+import dropPix4 from "../assets/photo3.jpg";
+import dropPix5 from "../assets/photo4.jpg";
 import { useRef } from 'react';
 const Header = () => {
     const profileDrop = useRef(null);
+    const noteDrop = useRef(null);
     return (
         <header className="w-[calc(100%-280px)] h-[70px] bg-white fixed right-0 top-0 p-5 flex items-center shadow-[]">
 
@@ -20,12 +25,68 @@ const Header = () => {
                 </div>
             </form>
             <div className="w-[50%] flex items-center gap-3 justify-end">
-                <div className="cursor-pointer">
+                <div className="cursor-pointer " >
                 <ion-icon name="settings-outline" size="large" ></ion-icon>
                 </div>
-                <div className="relative cursor-pointer">
+                <div className="relative cursor-pointer" onClick={() => {noteDrop.current.classList.toggle('hidden');}}>
                     <img className="w-10 h-10 rounded" src={bell} alt="" />
                     <span className="absolute top-0 left-7 transform -translate-y-1/2 w-3.5 h-3.5 bg-red-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                    <ul className="absolute top-[60px] right-[0px] w-[400px] h-[320px] rounded-xl bg-white shadow-lg p-4 overflow-y-scroll space-y-4 hidden" ref={noteDrop}>
+                    <li>
+                        <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={dropPix1} alt="" className="rounded-2xl shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">John Doe</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={headPhoto} alt="" className="rounded-2xl w-[60px] h-[60px] shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">Lea R. Frith</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={dropPix3} alt="" className="rounded-2xl w-[60px] h-[60px] shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">Erik L. Richards</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={dropPix4} alt="" className="rounded-2xl w-[60px] h-[60px] shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">John Doe</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={dropPix5} alt="" className="rounded-2xl w-[60px] h-[60px] shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">Renee I. Hanson</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="flex items-center gap-2 cursor-pointer">
+                            <img src={dropPix1} alt="" className="rounded-2xl w-[60px] h-[60px] shadow-lg" />
+                            <div className="flex flex-col gap-1">
+                                <h1 className="text-sm font-bold text-blue-900">Vicki M. Coleman</h1>
+                                <p className="text-xs text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ducimus...</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
                 </div>
 
                 <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" className="flex items-center relative text-sm pe-1 font-medium text-gray-900 rounded-full md:me-0 focus:outline-none" type="button" onClick={() => {profileDrop.current.classList.toggle('hidden');}}>
