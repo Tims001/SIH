@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.drop::-webkit-scrollbar{
+    width: 4px;
+}
+.drop::-webkit-scrollbar-track{
+    background: #e7e0e0;
+    border-radius: 0 20px 20px 0;
+}
+.drop::-webkit-scrollbar-thumb{
+    background: #656060;
+}
+
+.ionIconx ion-icon{
+    color: #7e7b7b;
+}
