@@ -21,7 +21,7 @@ const Header = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                     </div>
-                    <input type="search" id="search" className="block w-full h-full p-4 ps-10 text-lg text-gray-900  rounded-md bg-white border-2 border-gray-500 focus:outline-none focus:ring-blue-800 focus:border-blue-800 overflow-hidden" placeholder="Search here" required />
+                    <input type="text" id="search" className="block w-full h-full p-4 ps-10 text-lg text-gray-900  rounded-md bg-white border-2 border-gray-500 focus:outline-none focus:ring-blue-800 focus:border-blue-800 overflow-hidden" placeholder="Search here" required />
                     <button type="submit" className="text-gray-600 text-lg absolute end-[1px] bottom-[50%] translate-y-[50%] border-none flex items-center justify-center bg-transparent hover:text-white hover:bg-blue-800 focus:outline-none font-medium rounded-r-md h-full  w-[50px] px-4 py-2 transition-all duration-500 ease-in-out "><i className='bx bx-down-arrow-alt'></i></button>
                 </div>
             </form>
