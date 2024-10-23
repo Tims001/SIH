@@ -92,9 +92,6 @@ const SignUp = () => {
     if (!userInfo.phonenumber) {
       newErrors.phonenumber = "Phone No. is required";
       valid = false;
-    } else if (typeof userInfo.phonenumber != "number") {
-      newErrors.phonenumber = "Phone No. must be valid!";
-      valid = false;
     }
 
     if (!userInfo.password) {
@@ -240,6 +237,7 @@ const SignUp = () => {
             placeholder="Enter your telephone number"
             name="phonenumber"
             value={userInfo.phonenumber}
+            min={0}
             onChange={change}
           />
           {errors.phonenumber && <span style={{ color: 'red' }}>{errors.phonenumber}</span>}
