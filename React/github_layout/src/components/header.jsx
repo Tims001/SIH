@@ -10,8 +10,10 @@ const Header = () => {
     const profileDrop = useRef(null);
     const noteDrop = useRef(null);
     const sideSetting = useRef(null);
+    const head = useRef(null);
+    const formInput = useRef(null);
     return (
-        <header className="w-[calc(100%-280px)] h-[70px] bg-white fixed right-0 top-0 p-5 flex items-center shadow-[]">
+        <header className="w-[calc(100%-280px)] h-[70px] bg-white fixed right-0 top-0 pl-5 flex items-center transition-all duration-700" ref={head}>
 
             <form className="w-[50%]">
                 <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -21,7 +23,7 @@ const Header = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                     </div>
-                    <input type="text" id="search" className="block w-full h-full p-4 ps-10 text-lg text-gray-900  rounded-md bg-white border-2 border-gray-500 focus:outline-none focus:ring-blue-800 focus:border-blue-800 overflow-hidden" placeholder="Search here" required />
+                    <input type="text" id="search" className="block w-full h-full p-4 ps-10 text-lg text-gray-900  rounded-md bg-white border-2 border-gray-500 focus:outline-none  focus:border-blue-800 overflow-hidden transition-all duration-700" placeholder="Search here" required ref={formInput} />
                     <button type="submit" className="text-gray-600 text-lg absolute end-[1px] bottom-[50%] translate-y-[50%] border-none flex items-center justify-center bg-transparent hover:text-white hover:bg-blue-800 focus:outline-none font-medium rounded-r-md h-full  w-[50px] px-4 py-2 transition-all duration-500 ease-in-out "><i className='bx bx-down-arrow-alt'></i></button>
                 </div>
             </form>
@@ -94,7 +96,7 @@ const Header = () => {
                     <div className="flex items-center text-lg">
                         <span className="sr-only">Open user menu</span>
                         <img className="w-11 h-11 me-2 rounded-full shadow-xl" src={headPhoto} alt="user photo" />
-                        Ross C. Lopez
+                        <p>Ross C. Lopez</p>
                         <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                         </svg>
@@ -130,8 +132,8 @@ const Header = () => {
                     <div className="flex flex-col items-start p-5 gap-4">
                         <h1 className="text-xl font-semibold text-blue-950">Header Settings</h1>
                         <div className="flex items-center justify-between w-[100%]">
-                            <button className="h-11 w-[145px] bg-blue-900 rounded-md text-white text-lg font-semibold transition duration-700 hover:bg-blue-900">White</button>
-                            <button className="h-11 w-[145px] text-blue-900 rounded-md bg-white text-lg font-semibold border-blue-900 border-[1px] transition duration-700 hover:bg-blue-900 hover:text-white">Dark</button>
+                            <button className="h-11 w-[145px] bg-blue-900 rounded-md text-white text-lg font-semibold transition duration-700 hover:bg-blue-900" onClick={() => {head.current.classList.remove('bg-blue-950'); head.current.classList.add('bg-white');formInput.current.classList.remove('bg-blue-900');formInput.current.classList.add('bg-white');formInput.current.classList.remove('focus:border-gray-500'); formInput.current.classList.add('focus:border-blue-800');}}>White</button>
+                            <button className="h-11 w-[145px] text-blue-900 rounded-md bg-white text-lg font-semibold border-blue-900 border-[1px] transition duration-700 hover:bg-blue-900 hover:text-white" onClick={() => {head.current.classList.remove('bg-white'); head.current.classList.add('bg-blue-950');formInput.current.classList.remove('bg-white');formInput.current.classList.add('bg-blue-900');formInput.current.classList.remove('border-gray-500'); formInput.current.classList.add('border-blue-950'); formInput.current.classList.remove('focus:border-blue-800'); formInput.current.classList.add('focus:border-gray-500');}}>Dark</button>
                         </div>
                     </div>
                     <div className="flex flex-col items-start p-5 gap-4">
