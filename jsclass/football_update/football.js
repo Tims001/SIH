@@ -43,7 +43,6 @@ async function result2022() {
             </div>
             `
         });
-        
     } catch (error) {
         console.log(error);
     }
