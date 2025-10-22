@@ -7,6 +7,10 @@ import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/reactLogo.jsx";
+import Cube from "../components/cube.jsx";
+import Rings from "../components/Rings.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
 
@@ -30,20 +34,30 @@ const Hero = () => {
                 <Canvas className='w-full h-full'>
                     <Suspense fallback={<CanvasLoader />}>
                         <PerspectiveCamera makeDefault position={[0,0,25]} />
-                        <HackerRoom
-                            position={sizes.deskPosition}
-                            rotation={[0.2,-Math.PI,0]}
-                            scale={sizes.deskScale}
-                        />
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom
+                                position={sizes.deskPosition}
+                                rotation={[0.2,-Math.PI,0]}
+                                scale={sizes.deskScale}
+                            />
+                        </HeroCamera>
+
                         <group>
                             <Target position={sizes.targetPosition}/>
                             <ReactLogo position={sizes.reactLogoPosition}/>
+                            <Cube position={sizes.cubePosition}/>
+                            {/*<Rings position={sizes.ringPosition}/>*/}
                         </group>
 
                         <ambientLight intesity={1}/>
                         <directionalLight position={[10,10,10]} intensity={1}/>
                     </Suspense>
                 </Canvas>
+            </div>
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#contact" className="w-fit">
+                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+                </a>
             </div>
         </section>
     )
