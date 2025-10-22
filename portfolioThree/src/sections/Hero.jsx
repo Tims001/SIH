@@ -37,7 +37,7 @@ const Hero = () => {
                         />
                         <group>
                             <Target position={sizes.targetPosition}/>
-                            {/*<ReactLogo position={sizes.reactLogoPosition}/>*/}
+                            <ReactLogo position={sizes.reactLogoPosition}/>
                         </group>
 
                         <ambientLight intesity={1}/>
